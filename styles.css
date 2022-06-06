@@ -7,10 +7,13 @@
 }
 
 nav{
-    height:80px;
+    height:80px;/*moves "library logo" down a bit*/
     display:flex;
 }
 
+img{
+    width:100%;
+}
 .nav__container{    /*Since it is a class use "." instead of #*/
     width:100%;
     max-width:1200px;
@@ -20,8 +23,12 @@ nav{
     margin:0 auto;
 }
 
+.purple{
+    color:#7342d6;
+}
+
 .logo{
-    width:160px;
+    width:160px;/*Size of "library" logo*/
 }
 ul{
     display:flex;
@@ -29,7 +36,7 @@ ul{
 }
 
 li{
-    list-style-type: none;
+list-style-type: none;/*removes bullet points that are default to the unordered list*/
 }
 
 .nav__link{
@@ -39,4 +46,73 @@ li{
     color:#7342d6;
     font-weight:bold;
     padding:8px;
+}
+
+.nav__link--primary{
+    border:2px solid;
+    color:#7342d6;
+    border-radius:4px;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+.nav__link--primary:hover{
+    text-decoration:none;/*The reason this works is becuase it comes after the primary class without the hoverif i put the hover class beofre the non-hover the the hover would not work */
+}
+
+#landing__page{
+    background-color:rgba(115,66,215,0.1)/*changes the background-color*/
+}
+
+header{
+   height:calc(150vh - 80px) /*change the vertical height minus the 80px from the nav "library" logo*/
+}
+
+.header__container{
+    width:100%;/*check inspect element make sure the width is expanding the entire page that is what a container is for*/
+    max-width:720px;
+    margin:0 auto;/*centers the text in the container */
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.header__description{/*Helps move button to center*/
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;/*centers the button*/
+}
+
+h1{
+    font-size:56px;
+    color:#7342d6;
+    margin-bottom:24px;
+    text-align:center;
+    margin-top:90px
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+button{
+    cursor:pointer;
+}
+
+button:active{
+    transform: translateY(1px);/*Moves up and down on the Y axis(vertical)*/
+}
+
+.btn{
+    background-color:#7342d6;
+    color:white;
+    padding:12px 24px;
+    border-radius: 4px;
+    border: none;
+    font-size:20px;
 }
