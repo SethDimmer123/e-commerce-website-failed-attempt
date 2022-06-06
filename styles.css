@@ -13,6 +13,8 @@ nav{
 
 img{
     width:100%;
+    height:100%;
+    max-height:50vh;/*makes the image a lot smaller you want the "vh" at least half of your height */
 }
 .nav__container{    /*Since it is a class use "." instead of #*/
     width:100%;
@@ -116,3 +118,29 @@ button:active{
     border: none;
     font-size:20px;
 }
+
+.header__img--wrapper{
+    padding:20px;
+}
+
+.container{
+    padding:56px 0;
+}
+
+.row{/*The whole point of having a div row is for a max-width for big screens*/
+width:100%;
+max-width:1200px;/*this is so it doesnt stretch all the way to the sides and look ugly*/
+margin:0 auto;
+}
+
+/*
+
+HIGHLIGHTS
+
+*/
+
+.highlight__wrapper{
+    display:flex;
+}
+
+/*Stopped at 26:11*/
