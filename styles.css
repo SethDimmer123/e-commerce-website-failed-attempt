@@ -66,6 +66,7 @@ list-style-type: none;/*removes bullet points that are default to the unordered 
 
 #landing__page{
     background-color:rgba(115,66,215,0.1)/*changes the background-color*/
+    /*Since it's an id use "#" instead of "."*/
 }
 
 header{
@@ -82,7 +83,7 @@ header{
     flex-direction: column;
     justify-content:space-around;
 }
-.header__description{/*Helps move button to center*/
+.header__description{/*Helps move button to center*/    
     display:flex;
     justify-content: center;
     flex-direction: column;
