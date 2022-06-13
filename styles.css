@@ -51,13 +51,13 @@ list-style-type: none;/*removes bullet points that are default to the unordered 
 }
 
 .nav__link--primary{
-    border:2px solid;/*purple square with the word books inside it*/
+    border:2px solid;/*purple square with the word books inside it */
     color:#7342d6;
-    border-radius:4px;/*Adds curved edges to the nav link square*/
+    border-radius:4px;/*Adds curved edges to the nav link square */
 }
 
 .nav__link:hover{
-    text-decoration: underline;
+    text-decoration: underline;/*This targets the hover underlines on "Home" and "Contact" */
 }
 
 .nav__link--primary:hover{
@@ -74,7 +74,8 @@ header{
 
 .header__container{
     width:100%;/*check inspect element make sure the width is expanding the entire page that is what a container is for*/
-    max-width:720px;
+    max-width:720px;/*Contains the Header "America's Most Awarded online library platform"*/
+    /*look at inspect element for a better explanation*/
     margin:0 auto;/*centers the text in the container */
     height:100%;
     display:flex;
@@ -124,7 +125,7 @@ button:active{
 }
 
 .container{
-    padding:56px 0;
+    padding:56px 0;/*Moves "Why choose library" down a bit*/
 }
 
 .row{/*The whole point of having a div row is for a max-width for big screens*/
@@ -144,7 +145,7 @@ HIGHLIGHTS
 
 }
 
-.highlight{
+.highlight{/*This is for the boxes under "why choose library"*/
     padding:0 24px;
     width:calc(100% / 3);
     display:flex;
