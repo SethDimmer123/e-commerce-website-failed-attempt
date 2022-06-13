@@ -33,8 +33,8 @@ img{
     width:160px;/*Size of "library" logo*/
 }
 ul{
-    display:flex;
-    padding:24px;
+    display:flex;/*Brings the nav links vertically(They were on top of each other before (horizontally)*/
+    padding:24px;/*Moves the nav links down a bit (vertically) */
 }
 
 li{
@@ -42,18 +42,18 @@ list-style-type: none;/*removes bullet points that are default to the unordered 
 }
 
 .nav__link{
-    text-decoration:none;
-    margin-left:16px;
+    text-decoration:none;/*Removes underline*/
+    margin-left:16px;/*Spreads the nav links out in between more*/
     font-size:20px;
     color:#7342d6;
     font-weight:bold;
-    padding:8px;
+    padding:8px;/*Puts Padding inside the border on the "Books" */
 }
 
 .nav__link--primary{
-    border:2px solid;
+    border:2px solid;/*purple square with the word books inside it*/
     color:#7342d6;
-    border-radius:4px;
+    border-radius:4px;/*Adds curved edges to the nav link square*/
 }
 
 .nav__link:hover{
@@ -61,7 +61,7 @@ list-style-type: none;/*removes bullet points that are default to the unordered 
 }
 
 .nav__link--primary:hover{
-    text-decoration:none;/*The reason this works is becuase it comes after the primary class without the hoverif i put the hover class beofre the non-hover the the hover would not work */
+    text-decoration:none;/*The reason this works is becuase it comes after the primary class without the hover if i put the hover class beofre the non-hover the the hover would not work */
 }
 
 #landing__page{
