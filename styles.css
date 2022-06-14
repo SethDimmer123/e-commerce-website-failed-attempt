@@ -10,6 +10,9 @@ nav{
     height:80px;/*moves "library logo" down a bit*/
     display:flex;
 }
+p{/*Paragraphs in general will have his setting*/
+    line-height: 1.5em;
+}
 
 img{
     width:100%;
@@ -141,16 +144,50 @@ HIGHLIGHTS
 
 */
 
-.highlight__wrapper{
-    display:flex;
+#highlights:before{/*psuedo selector if i want to put something before Interval 33:20 e-commerce Website video*/ 
+/* content: ""; */
+background:url('./Assets/wave.svg');
+}
 
+#highlights:after{
+    content:"";/*you need this empty content for the psuedo selectors*/ 
+    background:url('./Assets/wave.svg');
+    position:absolute;/*This sets how an element is positioned in a document*/
+    width:110vw;
+    height:12vw;/*The height gets bigger the wider the screen gets*/
+}
+
+.highlight__wrapper{
+    display:flex;/*Gets the boxes side by side*/
 }
 
 .highlight{/*This is for the boxes under "why choose library"*/
-    padding:0 24px;
-    width:calc(100% / 3);
+    padding:0 24px;/*Padding top and bottom is 0 padding left and right is 24px*/
+    width:calc(100% / 3);/*A 3rd of the width*/
     display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
+    align-items:center;
 }
+
+.highlight__para{
+    text-align:center;
+}
+
+.highlight__img{/*thunderbolt image*/
+    border:2px solid #7342d6;
+    height:100px;
+    width:100px;/*how wide you want the inside of the image to be*/
+    display:flex;
+    justify-content:center;/*centers it horizontally*/
+    align-items: center;/*centers it vertically*/
+    border-radius: 4px;/*curved edges*/
+    font-size:32px;/* determines how big the thunderbolt is*/
+    margin-bottom: 24px;/*header and paragraph under the image*/
+    color:#7342d6;
+}
+
+.highlight__subtitle{/*paragraph under the image*/
+    font-size:20px;
+    margin-bottom:16px;
+}
+
