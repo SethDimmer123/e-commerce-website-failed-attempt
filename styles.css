@@ -83,7 +83,7 @@ header{
     flex-direction: column;
     justify-content:space-around;
 }
-.header__description{/*Helps move button to center*/    
+.header__description{/*Helps move button to center using flexbox*/    
     display:flex;
     justify-content: center;
     flex-direction: column;
