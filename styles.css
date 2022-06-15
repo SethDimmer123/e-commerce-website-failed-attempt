@@ -14,7 +14,7 @@ nav{
     height:80px;/*moves "library logo" down a bit*/
     display:flex;
 }
-p{/*Paragraphs in general will have his setting*/
+p{/*Paragraphs in general will have this setting*/
     line-height: 1.5em;
 }
 
