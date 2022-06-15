@@ -153,32 +153,36 @@ HIGHLIGHTS
     position: relative;/* positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left*/
 }
 
+/* #highlights:after,       The reason you pasted these is rules from #highlights:before and after is i am going to combine them for better structure */
+#highlights:before{         
+    content: "";
+    /* background:url('./Assets/wave.svg'); */ /*Wave*/
+    position: absolute;
+    width:101vw;
+    height:12vw;
+    left:0;
+    z-index:1;/*sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.*/
+    background-size: cover;/*The whole wave covers the background*/
+    background-repeat: no-repeat;/*the background is a square like it was shown on w3 schools*/
+}
+
 #highlights:before{/*psuedo selector if i want to put something before Interval 33:20 e-commerce Website video*/ 
-content: "";
-background:url('./Assets/wave.svg');
-position: absolute;
-width:101vw;
-height:12vw;
-top:1px;
-left:0;
-z-index:1;/*sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.*/
-background-size: cover;/*The whole wave covers the background*/
-background-repeat: no-repeat;/*the background is a square like it was shown on w3 schools*/
 transform: translateY(-100%); rotate: (180deg);
+top:1px;
 
 }
 
 #highlights:after{
-    content:"";/*you need this empty content for the psuedo selectors*/ 
+    /* content:"";you need this empty content for the psuedo selectors  */
     /* background:url(''); */
-    position:absolute;/*This sets how an element is positioned in a document*/
-    width:110vw;
-    height:12vw;/*The height gets bigger the wider the screen gets*/
-     top: 1px; /*specifying the vertical position of a positioned element. It has no effect on non-positioned elements. */
-    left:0;
-    z-index:1;
-    background-size:cover;
-    background-repeat: no-repeat;
+    /* position:absolute;This sets how an element is positioned in a document */
+    /* width:110vw; */
+    /* height:12vw;The height gets bigger the wider the screen gets */
+     /* top: 1px; specifying the vertical position of a positioned element. It has no effect on non-positioned elements. */
+    /* left:0; */
+    /* z-index:1; */
+    /* background-size:cover; */
+    /* background-repeat: no-repeat; */
     transform:translateY(200%) rotate(360deg) ;
 }
 
