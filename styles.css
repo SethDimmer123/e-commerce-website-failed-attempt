@@ -184,11 +184,11 @@ button{
     cursor:pointer;
 }
 
-button:active{
+button:active {
     transform: translateY(1px);/*Moves up and down on the Y axis(vertical)*/
 }
 
-.btn{
+.btn {
     background-color:#7342d6;
     color:white;
     padding:12px 24px;
@@ -465,5 +465,4 @@ button:active{/**/
     .highlight:not(:last-child) {
       margin-bottom: 24px;
     }
-  }
-  
+  } 
