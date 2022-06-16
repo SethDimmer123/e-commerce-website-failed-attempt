@@ -6,6 +6,10 @@
     font-family:'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
      max-width: 100vw;/*viewport width gives you a clearer understanding when shrinking or making a webpage bigger or smaller */
 }
@@ -230,4 +234,15 @@ FEATURES
 #features{
     height:1000px;
     background-color: rgba(115, 66, 214, 0.1);
+}
+
+.books{
+    display:flex; /*puts the books,pricings and stars in position to edit in css*/
+    flex-wrap:wrap;/*Makes the books wrap on the line below*/
+    justify-content: center;/*This centers the books to the middle of the"Featured Books"*/
+}
+
+.book{/*General class of */
+    width:25%;
+    padding:24px;
 }
