@@ -321,7 +321,9 @@ button:active{
   }
   
   .footer__logo {
-    display: flex;
+    display: flex;/*puts it side by side*/  /*Look at "style mini project for reference 20:20"*/
+    flex-direction:column;/*These put the logo in a column*/
+    align-items: center;/*This centers the logo*/
   }
   
   .footer__logo--img {
@@ -332,10 +334,16 @@ button:active{
   .footer__social--link,
   .footer__copyright {
     color: #fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .footer__list {
     margin: 20px 0 24px 0;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
   }
   
   .footer__link {
