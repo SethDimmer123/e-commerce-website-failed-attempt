@@ -227,7 +227,7 @@ top:1px;
 
 /*
 
-FEATURES
+FEATURED BOOKS
 
 */
 
@@ -236,13 +236,17 @@ FEATURES
     background-color: rgba(115, 66, 214, 0.1);
 }
 
-.books{
+.books{/*General class of all the books listed in both the "features" and "Latest" sections*/
     display:flex; /*puts the books,pricings and stars in position to edit in css*/
     flex-wrap:wrap;/*Makes the books wrap on the line below*/
     justify-content: center;/*This centers the books to the middle of the"Featured Books"*/
 }
 
-.book{/*General class of */
-    width:25%;
-    padding:24px;
+.book{/*The "outisde" area of what the books should look like*/
+    width:25%;/*Makes the books responsive when someone is looking on smaller screens*/
+    padding:24px;/*Spreads the books out to the sides a little bit*/
+}
+
+.book__img{
+    max-height:280px;
 }
