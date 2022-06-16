@@ -242,11 +242,144 @@ FEATURED BOOKS
     justify-content: center;/*This centers the books to the middle of the"Featured Books"*/
 }
 
-.book{/*The "outisde" area of what the books should look like*/
+.book{/*The "outside" area of what the books should look like*/
     width:25%;/*Makes the books responsive when someone is looking on smaller screens*/
     padding:24px;/*Spreads the books out to the sides a little bit*/
 }
 
 .book__img{
-    max-height:280px;
+    max-height:280px;/*sets the max height of the books "images" if set the max-height below 200px the books are crunched horizontally*/
+    transition:all 300ms ease;/*pops out "smoother" when "hovering over the books"*/
+    cursor:not-allowed;/*cursor not "authorized on books"*/
 }
+
+.book__img--wrapper{/*Wraps the books on a new line so the books are not squished or cut off from the screen*/
+    display:flex;
+    margin-bottom:8px;
+    border-radius:4px;
+    overflow: hidden;/*The scroll bar is hidden*/
+    display:flex;
+}
+
+.book:hover .book__img{
+    transform: scale(1.03);/*Book images pop out when you "hover" over them*/
+}
+
+.book__title{
+    font-size:22px;
+    margin-bottom:8px;
+    margin-top:10px;
+}
+
+.book__title:hover{
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.book__ratings{
+    margin-bottom:8px;
+    color:#fabf2a;
+}
+
+.book__price--normal{
+    text-decoration: line-through;
+    padding-right:6px;
+    color:#bfbfbf;
+}
+
+button:active{
+    transform:translateY(1px);
+}
+
+.btns {
+    display: flex;
+    background-color: #7342d6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #BrowseBooks {
+    background-color: white;
+  }
+  
+  /*
+  
+  FOOTER
+  
+  */
+  
+  footer {
+    background-color: #242424;
+  }
+  
+  .footer__logo {
+    display: flex;
+  }
+  
+  .footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);/**/
+  }
+  
+  .footer__social--link,
+  .footer__copyright {
+    color: #fff;
+  }
+  
+  .footer__list {
+    margin: 20px 0 24px 0;
+  }
+  
+  .footer__link {
+    padding: 0 8px;
+    color: #fff;
+  }
+  
+  /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+  @media (max-width: 768px) {
+    .header__description {
+      padding: 0 24px;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    button {
+      font-size: 18px;
+    }
+  
+    .book {
+      width: 50%;
+    }
+  }
+  
+  /*SMALL PHONES*/
+  @media (max-width: 550px) {
+    .nav__links {
+      display: none;
+    }
+    .btn__menu {
+      display: block;
+    }
+    .highlight {
+      width: 100%;
+    }
+  
+    .highlight:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  
